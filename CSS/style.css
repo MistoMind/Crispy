@@ -331,3 +331,44 @@ img{
         display: none;
     }
 }
+
+/* Button */
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #bd1c2a;
+}
+
+/* Food Search */
+.text-center-search{
+    text-align: center;
+}
+
+.food_container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.food-search{
+    background-position: initial;
+    padding: 7% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
