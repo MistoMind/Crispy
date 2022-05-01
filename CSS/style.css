@@ -1,0 +1,333 @@
+/* KOHO FONTS */
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;500;600&display=swap');
+
+:root{
+    --header-heigt: 3rem;
+
+   /* COLORS */
+   --white-color: #FFF;
+   --body-color: #000;
+
+    /* FONTS */
+  --body-font: 'KoHo', sans-serif;
+  --big-font-size: 1.25rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-weight:600;
+}
+
+/* BASE */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    min-height: 100%;
+}
+
+.section{
+    padding: 6rem 0 2rem;
+}
+
+.container{
+    margin-right: 5rem;
+    margin-left: 2rem;
+}
+
+body{
+    margin: var(--header-heigt);
+    font-family: var(--body-font);
+    background-color: rgba(31, 28, 28, 0.473);
+    color: var(--white-color);
+    background-image: url(/Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: var(--white-color);
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+img{
+    max-width: 200%;
+    height: auto;
+}
+
+.button--flex{
+    color: var(--white-color);
+    font-size: var(--big-font-size);
+    font-weight: var(--font-semi-bold);
+    padding-bottom: .125rem;
+    margin-right: 1rem;
+    white-space: nowrap;
+}
+
+/* HEADER */
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #000006;
+}
+  
+/* NAV */
+.nav{
+    height: var(--header-heigt);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__logo{
+    display: flex;
+    width: 1.5rem;
+}
+
+.nav__toggle{
+    font-size: 1.2rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px){
+    .nav__menu{
+        position: fixed;
+        background-color: #2a2a35;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 3rem 0 3rem;
+        transition: .4s;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pc{
+        display: none;
+    }
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display:inline-table;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    height: 100%;
+}
+
+.nav__link{
+    color: var(--white-color);
+    font-size: var(--normal-font-size);
+    text-transform: uppercase;
+    font-weight: var(--font-weight);
+    transition: .4s;
+    letter-spacing: .7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+.nav__link:hover{
+    opacity: 0.7;
+}
+
+.nav__close{
+    position: absolute;
+    font-size: 2rem;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.close__nav{
+    font-size: 1.2rem;
+}
+
+.pc{
+    padding-left: .25rem;
+    white-space: nowrap;
+}
+
+.active{
+    height: auto;
+    width: auto;
+    margin-left: 1.25rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: #52bddd;
+}
+
+.show-menu{
+    top: 0;
+}
+
+.home__header{
+    position: relative;
+}
+
+.home__title{
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*=============== Media ===============*/
+@media screen and (max-width: 340px){
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (min-width: 767px){
+    body{
+        margin: 0;
+    }
+
+    .container{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .section{
+        padding: 6rem 0 2rem;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        height: calc(var(--header-heigt) + 1.1rem);
+    }
+
+    .nav__menu{
+        display: flex;
+    }
+
+    .nav__logo{
+        width: 2rem;
+    }
+
+    .button--flex{
+        font-size: 1.1rem;
+        transition: 0.7s;
+    }
+
+    .nav__list{
+        flex-direction: row;
+        column-gap: .75rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        height: 100%;
+    }
+
+    .nav__link{
+        text-transform: inherit;
+    }
+
+    .nav__toggle,
+    .nav__close,
+    .mobile{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 968px){
+    :root{
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        margin: 0;
+    }
+
+    .section{
+        padding: 6rem 0 2rem;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        height: calc(var(--header-heigt) + 1.1rem)
+    }
+
+    .nav__list{
+        flex-direction: row;
+        column-gap: 3rem;
+        margin-right: 9rem;
+        margin-left: 6rem;
+        height: 100%;
+    }
+
+    .button--flex{
+        font-size: 1.2rem;
+    }
+
+    .nav__toogle,
+    .nav__close,
+    .mobile{
+        display: none;
+    }
+}

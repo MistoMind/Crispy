@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 
 <!-- JS -->
-<script src="/navbar.js"></script> 
+<script src="JS/navbar.js"></script> 
+<script src="JS/slideshow.js"></script>
 
-<!-- HEADER -->
+<!-- Header Start-->
 <header class="header" id="header">
     <nav class="nav container">
         <a href="#" class="nav__logo">
@@ -78,32 +79,19 @@
   	</a>
 </div>
 </header>
+<!-- Header End -->
 
-<section class="slider_section"></section>
-  <div class="slider">
-    <center>
-        <input type="search" id="site-search" name="q">
-        <button>Search</button><br>
-    </center>
-    <div class="images">
-        <input type="radio" name="slide" id="img1" checked>
-        <input type="radio" name="slide" id="img2">
-        <input type="radio" name="slide" id="img3">
-        <input type="radio" name="slide" id="img4">
-     
-        <img src="t_imgs/1.jpg" class="m1" alt="img1">
-        <img src="t_imgs/7.jpg" class="m2" alt="img2">
-        <img src="t_imgs/5.jpg" class="m3" alt="img3">
-        <img src="t_imgs/7.jpg" class="m4" alt="img4">
+<!-- Food Search Section Starts Here -->
+<section class="food-search text-center-search">
+    <div class="food_container">
+            
+        <form action="#" method="POST">
+            <input type="search" name="search" placeholder="Search Your Cravings..." required>
+            <input type="submit" name="submit" value="Search" class="btn btn-primary">
+        </form>
+
     </div>
-    <div class="dots">
-        <label for="img1"></label>
-        <label for="img2"></label>
-        <label for="img3"></label>
-        <label for="img4"></label>
-    </div>
-  </div>
-  
 </section>
+<!-- Food Search Section Ends Here -->
 </body>
 </html>
